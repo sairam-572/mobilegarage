@@ -1,0 +1,190 @@
+
+.navbar{
+	background-color: rgba(0,0,0,0.7);
+}
+.navbtn{
+	border: 1px solid rgba(255, 255, 255,0.9);
+}
+.circles{
+	width: 25px; height: 25px; border-radius: 50%;
+}
+
+.round{
+	background-color: red;
+	color: white;
+	padding: 10px;
+	border-radius: 50%;
+
+}
+.new1{
+
+	border-color: white; width:75%;margin-left: 0px;
+}
+.new2{
+
+	border-color: white; width:45%;margin-left: 0px;
+}
+.new3{
+
+	border-color: white; width:35%;margin-left: 0px;
+}
+input[type="text"]{
+	background-color:white;
+}
+.about{
+	background-image: url("../images/banner.jpg");
+	padding: 50px;
+	box-shadow: 1px 1px 5px;
+}
+
+
+/* media quries*/
+/*
+*{
+	scroll-behavior: smooth;
+}*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+		.zx{
+	height:188vh;
+}
+#sairam{
+	position: absolute;
+	top: 100px;
+	color: #fff;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.zx{
+	height:200vh;
+}
+#sairam{
+	position: absolute;
+	top: 100px;
+	color: #fff;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.zx{
+	height:200vh;
+}
+#sairam{
+	position: absolute;
+	top: 150px;
+	color: #fff;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.zx{
+	height: 200vh;
+}
+#sairam{
+	position: absolute;
+	top: 100px;
+	color: #fff;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.zx{
+	height: 100vh;
+}
+
+#sairam{
+	position: absolute;
+	top: 100px;
+	color: #fff;
+}
+}
+
+
+/* chat box styles */
+
+
+
+.open-button {
+  background-color: red;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 75px;
+  right: 10px;
+  width: 80px;
+  padding: 12px 20px;
+}
+
+.nsr{
+
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+   margin-bottom: 50px;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.blink{
+animation: blink 1.5s linear infinite;
+  }
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;
+ 
+  }
+100%{opacity: 1;}
+}
