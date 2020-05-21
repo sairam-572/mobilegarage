@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change-RadioButtons</title>
+</head>
+<style>
+	
+</style>
+<body>
+<h1  align="center">Choose Your Fav Drink</h1>
+<input type="radio" id="rb1" name="group1">
+<label for="rb1">ThumsUP</label>
+<input type="radio" id="rb2" name="group1">
+<label for="rb2">maaza</label>
+<input type="radio" name="group1" id="rb3">
+<label for="rb3">Sprite</label>
+<br>
+<img src="thumsup.jpg" id="cooldrink" width="250px" height="250px">
+<div id="div1" style="font-size: 20px; color: red;">
+	Please click on U'r Fav drink radio button 
+</div>
+<div>
+<audio controls id="music" style="display: none;" autoplay="">
+  <source src="thumsup.mp3" type="audio/mpeg">
+</audio>
+</div>
+<body>
+	<script>
+		document.getElementById('rb1').addEventListener("change",fun1);
+		document.getElementById('rb2').addEventListener("change",fun1);
+		document.getElementById('rb3').addEventListener("change",fun1);
+		function fun1(){
+			if (document.getElementById("rb1").checked==true) {
+				document.getElementById('div1').style.fontSize='20px';
+				document.getElementById('div1').style.color='brown';
+				document.getElementById('cooldrink').setAttribute("src","thumsup.jpg"); 
+				document.getElementById('music').setAttribute("src","thumsup.mp3");
+				document.getElementById('music').setAttribute("autoplay","");
+				document.getElementById('div1').innerHTML="ThumsUP";
+			}
+			else if (document.getElementById("rb2").checked==true) {
+				document.getElementById('div1').style.fontSize='35px';
+				document.getElementById('div1').style.color='orange';
+				document.getElementById('cooldrink').setAttribute("src","maza.jpg"); 
+				document.getElementById('music').setAttribute("src","maaza.mp3");
+				document.getElementById('music').setAttribute("autoplay","");
+				document.getElementById('div1').innerHTML="maaza";
+
+			}
+			else if (document.getElementById("rb3").checked==true) {
+				document.getElementById('div1').style.fontSize='50px';
+				document.getElementById('div1').style.color='lightgreen';
+				document.getElementById('cooldrink').setAttribute("src","sprite.jpg"); 
+				document.getElementById('music').setAttribute("src","sprite.mp3");
+				document.getElementById('music').setAttribute("autoplay","");
+				document.getElementById('div1').innerHTML="Sprite";
+
+			}
+
+		}
+	</script>
+</html>
