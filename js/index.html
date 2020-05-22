@@ -22,7 +22,7 @@ Pick one! </h1>
 </div>
 <div>
 <audio controls id="music" style="display: none;">
-  <source src="thumsup.mp3" type="audio/mpeg">
+  <source src="#" type="audio/mpeg">
 </audio>
 </div>
 <body>
@@ -32,7 +32,7 @@ Pick one! </h1>
 		document.getElementById('rb3').addEventListener("change",fun1);
 		function fun1(){
 			if (document.getElementById("rb1").checked==true) {
-				document.getElementById('div1').style.fontSize='20px';
+				document.getElementById('div1').style.fontSize='50px';
 				document.getElementById('div1').style.color='brown';
 				document.getElementById('cooldrink').setAttribute("src","thumsup.jpg"); 
 				document.getElementById('music').setAttribute("src","thumsup.mp3");
@@ -40,7 +40,7 @@ Pick one! </h1>
 				document.getElementById('div1').innerHTML="ThumsUP";
 			}
 			else if (document.getElementById("rb2").checked==true) {
-				document.getElementById('div1').style.fontSize='35px';
+				document.getElementById('div1').style.fontSize='50px';
 				document.getElementById('div1').style.color='orange';
 				document.getElementById('cooldrink').setAttribute("src","maza.jpg"); 
 				document.getElementById('music').setAttribute("src","maaza.mp3");
