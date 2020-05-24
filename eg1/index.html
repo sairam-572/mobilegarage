@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SignUp</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <style type="text/css">
- table{
+	<title>Regular Expression</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.error{
+			color: red;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		table{
  border-collapse: collapse;
  width:100%;
  text-align: center;
@@ -19,6 +24,9 @@
  }
  th,td{
  padding: 8px;
+ }
+ th{
+ 	border:1px solid white;
  }
  tr:nth-child(odd){
  background-color: #f2f2f2;
@@ -54,247 +62,153 @@
  	width: 100%;
  	border:1px solid #223a5e;
  }
- .input{
+ #txtname,#txtemail,#txtpassword,#txtmobile{
  	width: 100%;
  	height:50px;
  }
  .txt{
  	font-size: 20px;
+ 	height: 50px;
  }
- </style> 
+	</style>
 </head>
 <body>
-<h1>Signup</h1>
-<form>
-	<table border="0">
+	<h1 align="center">SignUP</h1>
+<form id="f12" action="https://sairam-572.github.io/mobilegarage/js/">
+<table border="0">
 		<tr>
 			<th>Name</th>
-			<td><input type="text" name="" placeholder="Enter Your Full Name" required=" " class="input" id="name">
-				<span id="nameresult"></span>
-			</td>
+		<td>
+			<input type="text" id="txtname">
+			<span id="spanname" class="error"></span>
+		</td>
 		</tr>
 		<tr>
 			<th>Email</th>
-			<td><input type="email" name="" placeholder="Eg: abc@gmail.com" required="" class="input" id="email">
-				<span id="emailresult"></span>
+			<td>
+				<input type="text" id="txtemail">
+				<span id="spanmail" class="error"></span>
 			</td>
 		</tr>
 		<tr>
 			<th>Password</th>
-			<td><input type="password" name="" placeholder="Password" required="" class="input" id="password" minlength="8">
-				<span id="passwordresult"></span>
+			<td>
+				<input type="password" id="txtpassword">
+				<span id="spanpassword" class="error"></span>
 			</td>
 		</tr>
 		<tr>
 			<th>Phone</th>
-			<td><input type="text" name="" placeholder="891********" required="" class="input" id="phone" maxlength="10">
-			<span id="phoneresult"></span>
+			<td>
+				<input type="text" id="txtmobile">
+				<span id="spanmobile" class="error"></span>
 			</td>
 		</tr>
 		<tr>
-			<th id="gender">Gender</th>
-			<td class="input">
-				<input type="radio" name="group" id="male" value="male"><label for="male" class="txt gender">Male </label>
-				<input type="radio" name="group" id="female" value="female" class="gender"><label for="male" class="txt">Female </label>
-				<span id="genderresult"></span>
+			<th id="gender txt">Gender</th>
+			<td class="input txt">
+				<input type="radio" name="gender" id="male">
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="female">
+				<label for="female">Female</label>
+				<span class="error" id="spangender"></span>
 			</td>
 		</tr>
 		<tr>
-		<td class="input txt" colspan="2"><input type="checkbox" name="" id="check"><span  id="TC">You Must Agree To the Terms And Conditions</span>
+		<td class="input txt" colspan="2">
+			I <input type="checkbox" id="check">
+			<label for="TAC" id="TAC">Agree to the T & C </label>
 		</td>
 		</tr>
 		<tr>
-			<td class="lastrow-1" colspan="2"><input type="reset" name="" id="reset" class="reset"></td>
+			<td class="lastrow-1" colspan="2">
+				<input type="reset" name="" id="reset" class="reset"></td>
 		</tr>
 		<tr>
-			<td class="lastrow" colspan="2"><input type="submit" name=""  id="submit" class="submit" style="cursor: not-allowed;"></td>
+			<td class="lastrow" colspan="2">
+				<input type="submit" value="SignUP" class="submit">
+			</td>
 		</tr>
 	</table>
-</form>
+	</form>
 </body>
 <script>
-//Name Feild
 
-	document.getElementById('name').addEventListener("keypress",fun1);
-	function fun1(ev){
-		var ch1=ev.which;
-		console.log(ch1);
-		if (!((ch1>=65 && ch1<=90)||(ch1>=97 && ch1<=122)|| (ch1 == 32)||(ch1==8)||(ch1==0))) {
-			ev.preventDefault();
-			var t=document.getElementById("nameresult");
-			t.innerHTML="Numbers and Special Char's Not Allowed";
-			t.style.fontFamily="cursive";
-			t.style.color="white";
-		}
-		else if ((ch1>=65 && ch1<=90)||(ch1>=97 && ch1<=122)|| (ch1 == 32)||(ch1==8)||(ch1==0)) {
-			var xt=document.getElementById("nameresult");
-			xt.innerHTML="Alphabets only";
-			xt.style.fontFamily="cursive";
-			xt.style.color="white";
-		}
-		document.getElementById('name').addEventListener('mouseout',fun11);
- 		function fun11()
- 		{
- 			document.getElementById('nameresult').style.display="none";
- 		}
- 		document.getElementById('name').addEventListener('mouseover',fun12);
- 		function fun12()
- 		{
- 			document.getElementById('nameresult').style.display="block";
- 		}
 
+	document.getElementById('f12').addEventListener('submit',fun1);
+	function fun1(event){
+
+
+		var s=document.getElementById('txtname').value;
+	var regexpname=/^[a-zA-Z ]*$/;
+	if (regexpname.test(s) == false){
+		event.preventDefault();
+		document.getElementById('spanname').innerHTML="Alphabets only";
 
 	}
-
-//phone Feild
-	document.getElementById('phone').addEventListener("keypress",fun2);
-	
-	function fun2(ev1){
-
-
-		var ch2=ev1.which;
-		if (!((ch2 >= 48 && ch2<=57)||(ch2==8)||(ch2==0))) {
-			ev1.preventDefault();
-			var t1=document.getElementById("phoneresult");
-			t1.innerHTML="Alphabets ansd Special char's Not Allowed";
-			t1.style.fontFamily="cursive";
-			t1.style.color="white";
-		}
-		else if ((ch2 >= 48 && ch2<=57)||(ch2==8)||(ch2==0)) {
-			var xt=document.getElementById("phoneresult");
-			xt.innerHTML="indian Numbers only";
-			xt.style.fontFamily="cursive";
-			xt.style.color="white";
-		}
-		document.getElementById('phone').addEventListener('mouseout',fun11);
- 		function fun11()
- 		{
- 			document.getElementById('phoneresult').style.display="none";
- 		}
- 		document.getElementById('phone').addEventListener('mouseover',fun12);
- 		function fun12()
- 		{
- 			document.getElementById('phoneresult').style.display="block";
- 		}
-
-
+	else if (s == "") {
+		document.getElementById('spanname').innerHTML="spaces not allowed";
+	}
+	else
+	{
+		document.getElementById('spanname').innerHTML="";
 	}
 
-// password Field
-document.getElementById('password').addEventListener('keypress',funpass);
-function funpass(){
-	var pass=document.getElementById("passwordresult");
-	pass.innerHTML="Password length should be minimum 8 cher's";
-	pass.style.color="white";
+		var s1=document.getElementById('txtemail').value;
+	var regexpmail=/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
+	if (regexpmail.test(s1) == false) {
+		event.preventDefault();
+		document.getElementById('spanmail').innerHTML="invalid email";
+	}
+	else
+	{
+		document.getElementById('spanmail').innerHTML="";
+	}
 
- 	document.getElementById('passwordresult').addEventListener('mouseout',fun11);
- 		function fun11()
- 		{
- 			document.getElementById('passwordresult').style.display="none";
- 		}
- 		document.getElementById('passwordresult').addEventListener('mouseover',fun12);
- 		function fun12()
- 		{
- 			document.getElementById('passwordresult').style.display="block";
- 		}
-
-
-}
-//email validation
-document.getElementById('email').addEventListener('keypress',funemail);
-function funemail(ev)
-{
-
-var ch1=ev.which;
-		if (!((ch1>=65 && ch1<=90)||(ch1>=97 && ch1<=122)|| (ch1 == 32)||(ch1==8)||(ch1==0)||(ch1 >= 48 && ch1<=57)||(ch1==8)||(ch1==0)||(ch1==46)||(ch1==64))) {
-			ev.preventDefault();
-			var t=document.getElementById("emailresult");
-			t.innerHTML="Numbers and Special Char's Not Allowed";
-			t.style.fontFamily="cursive";
-			t.style.color="white";
-			console.log(ch1);
-		}
-		else if ((ch1>=65 && ch1<=90)||(ch1>=97 && ch1<=122)|| (ch1 == 32)||(ch1==8)||(ch1==0)||(ch1 >= 48 && ch1<=57)||(ch1==8)||(ch1==46)||(ch1==64)) {
-			var xt=document.getElementById("emailresult");
-			xt.innerHTML="use gmail";
-			xt.style.fontFamily="cursive";
-			xt.style.color="white";
-		}
-		document.getElementById('email').addEventListener('mouseout',fun11);
- 		function fun11()
- 		{
- 			document.getElementById('emailresult').style.display="none";
- 		}
- 		document.getElementById('email').addEventListener('mouseover',fun12);
- 		function fun12()
- 		{
- 			document.getElementById('emailresult').style.display="block";
- 		}
-
-
-}
-
-
-
-document.getElementById('check').addEventListener("change",fun1);
-function fun1(){
-	var b=document.getElementById('check').checked;
-	if (b == true) {
-		document.getElementById("submit").style.cursor="pointer";
+	var s2=document.getElementById('txtmobile').value;
+	var regexpmobile=/^[789]\d{9}$/;
+	if (regexpmobile.test(s2) == false) {
+		event.preventDefault();
+		document.getElementById('spanmobile').innerHTML="invalid Mobile / Enter only Numbers";
 	}
 	else{
-		document.getElementById('submit').style.cursor="not-allowed";
-	}
-}
-
-document.getElementById('submit').addEventListener("mouseover",funTC);
-function funTC(){
-	var b=document.getElementById('check').checked;
-	if (b == true) {
-		var tac=document.getElementById('TC');
-		tac.innerHTML="You agreed Thanyou";
-		tac.style.color="green";
-	}
-	else if (b == false){
-		 var TAC=document.getElementById('TC');
-		 TAC.innerHTML="please Agree to the T&C";
-		 TAC.style.color="red";
+		document.getElementById('spanmobile').innerHTML="";
 	}
 
+	var s3=document.getElementById('txtpassword').value;
+	var regexppass=/((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15})/;
+	if (regexppass.test(s3) == false) {
+		event.preventDefault();
+		document.getElementById('spanpassword').innerHTML="Passwords: 8 to 15 characters and at least one upper case letter, one lower case letter and one digit";
+	}
+	else{
+		document.getElementById('spanpassword').innerHTML="";
+	}
 
+	var gendermale=document.getElementById('male').checked;
+	var genderfemale=document.getElementById('female').checked;
+	 if (!(gendermale == true || genderfemale == true)) {
+	document.getElementById('spangender').innerHTML="please choose your gender";
+	}
+	else{
+		document.getElementById('spangender').innerHTML="";
+	}
 
+	var agreement=document.getElementById("check").checked;
+	if (!(agreement == true)) {
+	var tac=document.getElementById('TAC');
+	tac.style.color="red";	
+	tac.style.fontSize="20px";
+	tac.style.fontFamily="cursive";
+	}
+	else{
+		var tac=document.getElementById('TAC');
+	tac.style.color="green";	
+	tac.style.fontSize="18px";
+	tac.style.fontFamily="monospace";
+	}
 
-var gendermale=document.getElementById('male').checked;
-var genderfemale=document.getElementById('female').checked;
-
-if (gendermale == true || genderfemale == true) {
-	console.log("Thanyou");
-}
-else if (!(gendermale == true || genderfemale == true)) {
-	window.alert("plaese choose your gender");
-}
-sairam();
-}
-
-function sairam(){
-	var a=document.getElementById('name').value;
-	var b=document.getElementById('email').value;
-	var c=document.getElementById('password').value;
-	var d=document.getElementById('phone').value;
-//////////////////////////////////////////////////////////
-	var e;    //this is for radio button
-	var f = document.getElementsByName('group');
-for(var i = 0; i < f.length; i++){
-    if(f[i].checked){
-        e = f[i].value;
-    }
-}
-console.log(e);
-/////////////////////////////////////////////////////////
-
-
-}
+	}// submit Function
 
 </script>
-
 </html>
