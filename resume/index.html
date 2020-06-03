@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Details</title>
+	<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<h1 align="center" class="text-primary font-italic">RESUME DETAILS</h1>
+<div class="container">
+	<form class="needs-validation" novalidate="novalidate">
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text bg-primary text-white">Name</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter Your Full Name" id="fullname" required="required" pattern="(^[a-zA-Z ]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Name :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text bg-primary text-white">Designation</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Eg: WEB Developer / Java Developer" id="desg"
+			required="required" pattern="(^[a-zA-Z ]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Designation :&nbsp;(
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">Mobile</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Eg: 8919111249" id="mobile" required="required"  pattern="(^[0-9]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Phone number :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<input type="mail" class="form-control" placeholder="Enter your Mail Id" id="mail" required="required" pattern="(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)">
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">@example.com</span>
+		</div>
+		<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Email :&nbsp;(
+			</div>
+		</div>
+		</div>
+		<fieldset>
+		<legend>DEGREE</legend>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">CollegeDegre</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Eg:BTech/BE" required="required" id="clzdegree" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 16px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 16px; font-weight: bold;">
+				Invalid Collage Name spaces and special charecters not allowed :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group form-group col-sm-12 col-lg-6 mb-2">
+		<select class="form-control" id="course" required="required" id="branch">
+			<option value="">Branch</option>
+			<option>CSE</option>
+			<option>ECE</option>
+			<option>CIVIL</option>
+			<option>MECH</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Choose Your Stream</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 16px; font-weight: bold;">
+				choose Your streem :&nbsp;(
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">CollegeName</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter Your Collage Name"
+			 pattern="(^[a-zA-Z]*$)" required="required" id="clzname">
+			 <div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Collage Name :&nbsp;(
+			</div>
+
+		</div>
+				<div class="input-group col-sm-12 col-lg-4 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white">Score</span>
+				</div>
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required"  pattern="(^[0-9]*$)" id="score">
+					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
+				Invalid score and points are not allowed  :&nbsp;(
+			</div>
+				</div>
+		<div class="input-group form-group col-sm-12 col-lg-4 mb-2">
+		<select class="form-control" id="yop" required="required">
+			<option value="">Y.O.P</option>
+			<option>2020</option>
+			<option>2019</option>
+			<option>2018</option>
+			<option>2017</option>
+			<option>2016</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Passed Out Year</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
+				please choose Y.O.P  :&nbsp;(
+			</div>
+		</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<legend>12th</legend>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">12th</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Eg:INTER/Polytechnic"  required="required" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Collage Degree :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<select class="form-control" id="branch-2" required="">
+			<option value="">Branch</option>
+			<option>MPC</option>
+			<option>MEC</option>
+			<option>CEC</option>
+			<option>MECH</option>
+			<option>CSE</option>
+			<option>CIVIL</option>
+			<option>Others</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Choose Your Stream</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Choose one :&nbsp;(
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">CollegeName</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter Your Collage Name" required="required" id="clzname2" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Collage Name :&nbsp;(
+			</div>
+		</div>
+				<div class="input-group col-sm-12 col-lg-4 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white">Score</span>
+				</div>
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required" id="score2"  pattern="(^[0-9]*$)">
+					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
+				Invalid score and points are not allowed  :&nbsp;(
+			</div>
+				</div>
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<select class="form-control" id="course2" required="required">
+			<option value="">Y.O.P</option>
+			<option>2016</option>
+			<option>2015</option>
+			<option>2014</option>
+			<option>2013</option>
+			<option>2012</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Passed Out Year</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
+				choose Y.O.P  :&nbsp;(
+			</div>
+		</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<legend>SSC</legend>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">School Name</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter Your School Name" required="required" id="skoolname" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid School Name :&nbsp;(
+			</div>
+		</div>
+				<div class="input-group col-sm-12 col-lg-4 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white">SSC Score</span>
+				</div>
+					<input type="text" class="form-control" placeholder="Enter Your SSC Score"  pattern="(^[0-9]*$)" required="required" id="skoolscore">
+					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid School Score points not allowed :&nbsp;(
+			</div>
+				</div>
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<select class="form-control" id="skoolYOP" required="required">
+			<option value="">Y.O.P</option>
+			<option>2014</option>
+			<option>2013</option>
+			<option>2012</option>
+			<option>2011</option>
+			<option>2010</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Passed Out Year</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				choose  one :&nbsp;(
+			</div>
+		</div>
+		</div>
+</fieldset>
+
+		<fieldset>
+		<legend>Experiance</legend>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">Institution</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter Your Institution Name" required="required" id="Institution" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Institution Name spaces not allowed:&nbsp;(
+			</div>
+		</div>
+				<div class="input-group col-sm-12 col-lg-4 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white">Course/Profile</span>
+				</div>
+					<input type="text" class="form-control" placeholder="Eg:App Development" pattern="(^[a-zA-Z]*$)" id="Profile" required="required">
+					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid profile Name spaces not allowed :&nbsp;(
+			</div>
+				</div>
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<select class="form-control" id="city" required="required">
+			<option value="">CITY</option>
+			<option>Hyd</option>
+			<option>Chennai</option>
+			<option>Bnglr</option>
+			<option>VIJ</option>
+			<option>PUNE</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">placeholder</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Coose One:&nbsp;(
+			</div>
+		</div>
+		</div>
+</fieldset>
+
+<fieldset>
+		<legend>Projects</legend>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white">Project Title</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Eg:Resume Builder" required="required" id="ptitle" pattern="(^[a-zA-Z]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid project Name spaces not allowed :&nbsp;(
+			</div>
+		</div>
+				<div class="input-group col-sm-12 col-lg-4 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white">URL</span>
+				</div>
+					<input type="text" class="form-control" placeholder="Enter URL/GIT Hub Link" required="required" id="url">
+					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid url :&nbsp;(
+			</div>
+				</div>
+		<div class="input-group col-sm-12 col-lg-4 mb-2">
+		<select class="form-control" id="Duration" required="required">
+			<option value="">choose</option>
+			<option>1 Month</option>
+			<option>2 Months</option>
+			<option>3 Months</option>
+			<option>4 Months</option>
+			<option>5 Months</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Time Duration</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				choose one :&nbsp;(
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text  bg-primary text-white" id="pd">Project<br> Description</span>
+		</div>
+		<textarea class="form-control" id="content" rows="3" required="required"></textarea>
+		</div>
+				<div class="input-group col-sm-12 col-lg-6 mb-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text  bg-primary text-white" id="TE">Tools &<br> Environment</span>
+				</div>
+				<textarea class="form-control" id="content" rows="3" required="required"></textarea>
+				</div>
+		</div>
+</fieldset>
+
+		<fieldset class="mt-1">
+		<legend>Skills</legend>
+		<div class="container">
+		<div class="row">
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">C
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">OOPS(C++)
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Java
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Python
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Dart
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Javascript
+			</label>
+		</div>
+		</div>
+				<div class="row">
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">HTML
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">CSS
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">BOOTSTRAP
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">JQuery
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Angular
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">REACT
+			</label>
+		</div>
+		</div>
+
+
+</div>
+	</fieldset>
+
+
+	<fieldset>
+		<legend>Tools</legend>
+		<div class="container">
+		<div class="row">
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Visual Studio Code
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Sublime Text
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Eclips
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">NetBeans
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Android Studio
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">IntelliJ IDEA
+			</label>
+		</div>
+</div>
+</div>
+</fieldset>
+
+	<fieldset>
+		<legend>Personal Details</legend>
+		<form>
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text bg-primary text-white">Father's Name</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter your Father Name" id="fathername" id="fathername" pattern="(^[a-zA-Z ]*$)" required="required">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Father Name :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<div class="input-group-prepend">
+			<span class="input-group-text bg-primary text-white">Native Place:</span>
+		</div>
+			<input type="text" class="form-control" placeholder="Enter your Native Place" id="native" required="required" pattern="(^[a-zA-Z ]*$)">
+			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				hey! it's good :&nbsp;)
+			</div>
+			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				Invalid Native Place :&nbsp;(
+			</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<select class="form-control" id="nationality" required="required">
+			<option value="">Country</option>
+			<option>INDIA</option>
+			<option>USA</option>
+			<option>Others</option>
+		</select>
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Nationality</span>
+		</div>
+				<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				choose one :&nbsp;(
+			</div>
+		</div>
+		<div class="input-group col-sm-12 col-lg-6 mb-2">
+		<input type="date" class="form-control" placeholder="Enter your Mail Id" id="dob" required="required">
+		<div class="input-group-append">
+			<span class="input-group-text  bg-primary text-white">Date Of Birth</span>
+		</div>
+		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
+				DOB :&nbsp;(
+			</div>
+		</div>
+		</div>
+
+		<div class="container">
+			<div class="row border p-2">
+				<div class="col-sm-3 col-lg-2">
+					<b class="font-bold mb-2">Languages</b>
+				</div>
+						<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">English
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Hindhi
+			</label>
+		</div>
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Telugu
+			</label>
+		</div>
+				<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Tamil
+			</label>
+		</div>		
+		<div class="form-group form-check col-sm-3 col-lg-2">
+			<label for="c" class="form-check-label">
+				<input type="checkbox" class="form-check-input">Kannada
+			</label>
+		</div>
+			</div>
+		</div>
+
+	</fieldset>
+	<div class="row">
+		<div class="col-sm-12 col-lg-6">
+			<input type="reset" class="btn btn-block btn-lg border-primary text-primary mt-2 mb-2">
+		</div>
+		<div class="col-sm-12 col-lg-6">
+			<input type="submit" class="btn btn-block btn-lg border-success text-success mt-2 mb-2">
+		</div>
+	</div>
+	</form>
+</div>
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+	document.getElementsByClassName('needs-validation')[0].addEventListener("submit",function(event){
+		if(event.target.checkValidity()==false)
+		{
+			event.preventDefault();
+			event.target.classList.add('was-validated');
+		}
+	});
+</script>
+</html>
