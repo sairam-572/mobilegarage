@@ -576,7 +576,7 @@
 			<input type="reset" class="btn btn-block btn-lg border-primary text-primary mt-2 mb-2">
 		</div>
 		<div class="col-sm-12 col-lg-6">
-			<input type="submit" class="btn btn-block btn-lg border-success text-success mt-2 mb-2" id="submit">
+			<input type="submit" class="btn btn-block btn-lg border-success text-success mt-2 mb-2" id="submit" onclick="submit()">
 		</div>
 	</div>
 	</form>
@@ -593,10 +593,20 @@
 			event.preventDefault();
 			event.target.classList.add('was-validated');
 		}
-		else{submit();}
+		
 	});
 	function submit(){
-		alert("SAI");
+		var name=document.getElementById('name').value;
+		// Check browser support
+		if (typeof(Storage) !== "undefined") {
+  		// Store
+  		localStorage.setItem("lastname",name);
+ 		// Retrieve
+  		document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  		alert("lastname");
+		} else {
+ 		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
 	}
 </script>
 </html>
