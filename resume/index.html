@@ -43,7 +43,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">Mobile</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg: 8919111249" id="mobile" required="required"  pattern="(^[0-9]*$)">
+			<input type="text" class="form-control" placeholder="Eg: 8919111249" id="MobileNo" required="required"  pattern="(^[0-9]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 		<div class="input-group col-sm-12 col-lg-6 mb-2">
-		<input type="mail" class="form-control" placeholder="Enter your Mail Id" id="mail" required="required" pattern="(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)">
+		<input type="text" class="form-control" placeholder="Enter your Mail Id" required="required" pattern="(\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)"  id="UserMail">
 		<div class="input-group-append">
 			<span class="input-group-text  bg-primary text-white">@example.com</span>
 		</div>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 		<div class="input-group form-group col-sm-12 col-lg-6 mb-2">
-		<select class="form-control" id="course" required="required" id="branch">
+		<select class="form-control" required="required" id="DBranch">
 			<option value="">Branch</option>
 			<option>CSE</option>
 			<option>ECE</option>
@@ -114,7 +114,7 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">Score</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required"  pattern="(^[0-9 . %]*$)" id="score">
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required"  pattern="(^[0-9 . %]*$)" id="Dscore">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -123,7 +123,7 @@
 			</div>
 				</div>
 		<div class="input-group form-group col-sm-12 col-lg-4 mb-2">
-		<select class="form-control" id="yop" required="required">
+		<select class="form-control" id="DYOP" required="required">
 			<option value="">Y.O.P</option>
 			<option>2020</option>
 			<option>2019</option>
@@ -147,7 +147,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">12th</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg:INTER/Polytechnic"  required="required" pattern="(^[a-zA-Z _]*$)">
+			<input type="text" class="form-control" placeholder="Eg:INTER/Polytechnic"  required="required" pattern="(^[a-zA-Z _]*$)" id="twelfth">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -156,7 +156,7 @@
 			</div>
 		</div>
 		<div class="input-group col-sm-12 col-lg-6 mb-2">
-		<select class="form-control" id="branch-2" required="">
+		<select class="form-control" required="required" id="twelfthBranch">
 			<option value="">Branch</option>
 			<option>MPC</option>
 			<option>MEC</option>
@@ -180,7 +180,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">CollegeName</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter Your Collage Name" required="required" id="clzname2" pattern="(^[a-zA-Z _]*$)">
+			<input type="text" class="form-control" placeholder="Enter Your Collage Name" required="required" id="TCN" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -192,7 +192,7 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">Score</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required" id="score2"  pattern="(^[0-9 . %]*$)">
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required" id="TwelfthScore"  pattern="(^[0-9 . %]*$)">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -201,7 +201,7 @@
 			</div>
 				</div>
 		<div class="input-group col-sm-12 col-lg-4 mb-2">
-		<select class="form-control" id="course2" required="required">
+		<select class="form-control" id="TYOP" required="required">
 			<option value="">Y.O.P</option>
 			<option>2016</option>
 			<option>2015</option>
@@ -292,7 +292,7 @@
 			</div>
 				</div>
 		<div class="input-group col-sm-12 col-lg-4 mb-2">
-		<select class="form-control" id="city" required="required">
+		<select class="form-control" id="City" required="required">
 			<option value="">CITY</option>
 			<option>Hyd</option>
 			<option>Chennai</option>
@@ -317,7 +317,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">Project Title</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg:Resume Builder" required="required" id="ptitle" pattern="(^[a-zA-Z _]*$)">
+			<input type="text" class="form-control" placeholder="Eg:Resume Builder" required="required" id="project" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -363,9 +363,9 @@
 		</div>
 				<div class="input-group col-sm-12 col-lg-6 mb-2">
 				<div class="input-group-prepend">
-					<span class="input-group-text  bg-primary text-white" id="TE">Tools &<br> Environment</span>
+					<span class="input-group-text  bg-primary text-white">Tools &<br> Environment</span>
 				</div>
-				<textarea class="form-control" id="content" rows="3" required="required" pattern="(^[a-zA-Z _]*$)" placeholder="Eg:HTML,CSS,Javascript"></textarea>
+				<textarea class="form-control" id="TE" rows="3" required="required" pattern="(^[a-zA-Z _]*$)" placeholder="Eg:HTML,CSS,Javascript"></textarea>
 				</div>
 		</div>
 </fieldset>
@@ -376,64 +376,64 @@
 		<div class="row">
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">C
+				<input type="checkbox" class="form-check-input" name="skill">C
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">OOPS(C++)
+				<input type="checkbox" class="form-check-input" name="skill">OOPS(C++)
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Java
+				<input type="checkbox" class="form-check-input" name="skill">Java
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Python
+				<input type="checkbox" class="form-check-input" name="skill">Python
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Dart
+				<input type="checkbox" class="form-check-input" name="skill">Dart
 			</label>
 		</div>
-				<div class="form-group form-check col-sm-3 col-lg-2">
+				<div class="form-group form-check col-sm-3 col-lg-2" name="skill">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Javascript
+				<input type="checkbox" class="form-check-input" name="skill">Javascript
 			</label>
 		</div>
 		</div>
 				<div class="row">
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">HTML
+				<input type="checkbox" class="form-check-input" name="skill">HTML
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">CSS
+				<input type="checkbox" class="form-check-input" name="skill">CSS
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">BOOTSTRAP
+				<input type="checkbox" class="form-check-input" name="skill">BOOTSTRAP
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">JQuery
+				<input type="checkbox" class="form-check-input" name="skill">JQuery
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Angular
+				<input type="checkbox" class="form-check-input" name="skill">Angular
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">REACT
+				<input type="checkbox" class="form-check-input" name="skill">REACT
 			</label>
 		</div>
 		</div>
@@ -594,14 +594,104 @@
 			event.target.classList.add('was-validated');
 		}
 		else{
+		//assigning values to variables
+		var Fullname=document.getElementById('fullname').value;
+		var Designation=document.getElementById('desg').value;
+		var Mobile=document.getElementById('MobileNo').value;
+		var EMail=document.getElementById('UserMail').value;
+		//Degree Details
+		var CollageDegree=document.getElementById('clzdegree').value;
+		var DStream=document.getElementById('DBranch').value;
+		var DegreeCollageName=document.getElementById('clzname').value;
+		var DegreeScore=document.getElementById('Dscore').value;
+		var DegreeYOP=document.getElementById('DYOP').value;
+		//12th
+		var Twelfth=document.getElementById('twelfth').value;
+		var TBranch=document.getElementById('twelfthBranch').value;
+		var TClzName=document.getElementById('TCN').value;
+		var TScore=document.getElementById('TwelfthScore').value;
+		var TYOP=document.getElementById('TYOP').value;
+		//SSC
+		var scoolname=document.getElementById('skoolname').value;
+		var scoolscore=document.getElementById('skoolscore').value;
+		var scoolYOP=document.getElementById('skoolYOP').value;
+		//Exp
+		var institute=document.getElementById('Institution').value;
+		var profile=document.getElementById('Profile').value;
+		var city=document.getElementById('City').value;
+		//projects
+		var Project=document.getElementById('project').value;
+		var URL=document.getElementById('url').value;
+		var Time=document.getElementById('Duration').value;
+		var Desc=document.getElementById('content').value;
+		var Tools=document.getElementById('TE').value;
+		//Skills
 
-		var username=document.getElementById('fullname').value;
+		var checkboxes = document.getElementsByName('skill').value;
+		var vals = "";
+		for (var i=0, n=checkboxes.length;i<n;i++) 
+		{
+    	if (checkboxes[i].checked) 
+    	{
+        vals += ","+checkboxes[i].value;
+    	}
+		}
+		//if (vals) vals = vals.substring(1);
+
+
+
+		//Personal Details
+		var Fathername=document.getElementById('fathername').value;
+		var Native=document.getElementById('native').value;
+		var Country=document.getElementById('nationality').value;
+		var DOB=document.getElementById('dob').value;
+
+
 		if (typeof(Storage) !== "undefined") {
+  		localStorage.clear();
   		// Store
-  		localStorage.setItem("lastname",username);
+  		localStorage.setItem("userFullname",Fullname);
+  		localStorage.setItem("userDesignation",Designation);
+  		localStorage.setItem("userMobile",Mobile);
+  		localStorage.setItem("userEMail",EMail);
+
+  		localStorage.setItem("userCollageDegree",CollageDegree);
+  		localStorage.setItem("userDStream",DStream);
+  		localStorage.setItem("userDegreeCollageName",DegreeCollageName);
+  		localStorage.setItem("userDegreeScore",DegreeScore);
+  		localStorage.setItem("userDegreeYOP",DegreeYOP);
+
+  		localStorage.setItem("userTwelfth",Twelfth);
+  		localStorage.setItem("userTBranch",TBranch);
+  		localStorage.setItem("userTClzName",TClzName);
+  		localStorage.setItem("userTScore",TScore);
+  		localStorage.setItem("userTYOP",TYOP);
+
+  		localStorage.setItem("userscoolname",scoolname);
+  		localStorage.setItem("userscoolscore",scoolscore);
+  		localStorage.setItem("userscoolYOP",scoolYOP);
+
+  		localStorage.setItem("userinstitute",institute);
+  		localStorage.setItem("userprofile",profile);
+  		localStorage.setItem("usercity",city);
+
+  		localStorage.setItem("userProject",Project);
+  		localStorage.setItem("userURL",URL);
+  		localStorage.setItem("userTime",Time);
+  		localStorage.setItem("userDesc",Desc);
+  		localStorage.setItem("userTools",Tools);
+
+
+  		localStorage.setItem("userFathername",Fathername);
+  		localStorage.setItem("userNative",Native);
+  		localStorage.setItem("userCountry",Country);
+  		localStorage.setItem("userDOB",DOB);
+
+  		localStorage.setItem("userSkill",vals)
+
+
  		// Retrieve
   		//document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-  		alert(localStorage.getItem("lastname"));
 		} else {
  		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 		}
