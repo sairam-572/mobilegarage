@@ -594,15 +594,18 @@
 			event.target.classList.add('was-validated');
 		}
 		else{
-			if (typeof(Storage) !== "undefined") {
+
+		var username=document.getElementById('fullname').value;
+		if (typeof(Storage) !== "undefined") {
   		// Store
-  		localStorage.setItem("lastname",name);
+  		localStorage.setItem("lastname",username);
  		// Retrieve
-  		document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-  		alert("lastname");
+  		//document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+  		alert(localStorage.getItem("lastname"));
 		} else {
  		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-}
+		}
+
 		}
 	});
 </script>
