@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-	<h1 align="center" class="text-primary font-italic">RESUME DETAILS</h1>
+	<h1 class="text-center mb-5">RESUME DETAILS</h1>
 <div class="container">
 	<form class="needs-validation" novalidate="novalidate">
 		<div class="row">
@@ -15,7 +15,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text bg-primary text-white">Name</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter Your Full Name" id="fullname" required="required" pattern="(^[a-zA-Z ]*$)">
+			<input type="text" class="form-control" placeholder="Enter Your Full Name" id="fullname" required="required" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -28,7 +28,7 @@
 			<span class="input-group-text bg-primary text-white">Designation</span>
 		</div>
 			<input type="text" class="form-control" placeholder="Eg: WEB Developer / Java Developer" id="desg"
-			required="required" pattern="(^[a-zA-Z ]*$)">
+			required="required" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -71,12 +71,12 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">CollegeDegre</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg:BTech/BE" required="required" id="clzdegree" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Eg:BTech/BE" required="required" id="clzdegree" pattern="(^[a-zA-Z _ .]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 16px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 16px; font-weight: bold;">
-				Invalid Collage Name spaces and special charecters not allowed :&nbsp;(
+				Invalid Collage Name :&nbsp;(
 			</div>
 		</div>
 		<div class="input-group form-group col-sm-12 col-lg-6 mb-2">
@@ -101,7 +101,7 @@
 			<span class="input-group-text  bg-primary text-white">CollegeName</span>
 		</div>
 			<input type="text" class="form-control" placeholder="Enter Your Collage Name"
-			 pattern="(^[a-zA-Z]*$)" required="required" id="clzname">
+			 pattern="(^[a-zA-Z _]*$)" required="required" id="clzname">
 			 <div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -114,12 +114,12 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">Score</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required"  pattern="(^[0-9]*$)" id="score">
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required"  pattern="(^[0-9 . %]*$)" id="score">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
-				Invalid score and points are not allowed  :&nbsp;(
+				only % is Allowed :&nbsp;(
 			</div>
 				</div>
 		<div class="input-group form-group col-sm-12 col-lg-4 mb-2">
@@ -147,7 +147,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">12th</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg:INTER/Polytechnic"  required="required" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Eg:INTER/Polytechnic"  required="required" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -180,7 +180,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">CollegeName</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter Your Collage Name" required="required" id="clzname2" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Enter Your Collage Name" required="required" id="clzname2" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -192,12 +192,12 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">Score</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required" id="score2"  pattern="(^[0-9]*$)">
+					<input type="text" class="form-control" placeholder="Enter Your Collage Score" required="required" id="score2"  pattern="(^[0-9 . %]*$)">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 14px; font-weight: bold;">
-				Invalid score and points are not allowed  :&nbsp;(
+				Invalid score :&nbsp;(
 			</div>
 				</div>
 		<div class="input-group col-sm-12 col-lg-4 mb-2">
@@ -225,7 +225,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">School Name</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter Your School Name" required="required" id="skoolname" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Enter Your School Name" required="required" id="skoolname" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -237,12 +237,12 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">SSC Score</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter Your SSC Score"  pattern="(^[0-9]*$)" required="required" id="skoolscore">
+					<input type="text" class="form-control" placeholder="Enter Your SSC Score"  pattern="(^[0-9 . %]*$)" required="required" id="skoolscore">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
-				Invalid School Score points not allowed :&nbsp;(
+				Invalid School Score :&nbsp;(
 			</div>
 				</div>
 		<div class="input-group col-sm-12 col-lg-4 mb-2">
@@ -271,24 +271,24 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">Institution</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter Your Institution Name" required="required" id="Institution" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Enter Your Institution Name" required="required" id="Institution" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
-				Invalid Institution Name spaces not allowed:&nbsp;(
+				Invalid Institution Name:&nbsp;(
 			</div>
 		</div>
 				<div class="input-group col-sm-12 col-lg-4 mb-2">
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">Course/Profile</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Eg:App Development" pattern="(^[a-zA-Z]*$)" id="Profile" required="required">
+					<input type="text" class="form-control" placeholder="Eg:App Development" pattern="(^[a-zA-Z _]*$)" id="Profile" required="required">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
-				Invalid profile Name spaces not allowed :&nbsp;(
+				Invalid profile Name:&nbsp;(
 			</div>
 				</div>
 		<div class="input-group col-sm-12 col-lg-4 mb-2">
@@ -301,7 +301,7 @@
 			<option>PUNE</option>
 		</select>
 		<div class="input-group-append">
-			<span class="input-group-text  bg-primary text-white">placeholder</span>
+			<span class="input-group-text  bg-primary text-white">place</span>
 		</div>
 		<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				Coose One:&nbsp;(
@@ -317,19 +317,19 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white">Project Title</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Eg:Resume Builder" required="required" id="ptitle" pattern="(^[a-zA-Z]*$)">
+			<input type="text" class="form-control" placeholder="Eg:Resume Builder" required="required" id="ptitle" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
 			<div class="invalid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
-				Invalid project Name spaces not allowed :&nbsp;(
+				Invalid project Name:&nbsp;(
 			</div>
 		</div>
 				<div class="input-group col-sm-12 col-lg-4 mb-2">
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white">URL</span>
 				</div>
-					<input type="text" class="form-control" placeholder="Enter URL/GIT Hub Link" required="required" id="url">
+					<input type="text" class="form-control" placeholder="Enter URL/GIT Hub Link" required="required" id="url" pattern="(^[a-zA-Z0-9 / . : -]*$)">
 					<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -359,13 +359,13 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text  bg-primary text-white" id="pd">Project<br> Description</span>
 		</div>
-		<textarea class="form-control" id="content" rows="3" required="required"></textarea>
+		<textarea class="form-control" id="content" rows="3" required="required" pattern="(^[a-zA-Z _]*$)" placeholder="Eg:It is Easy to Use Our Resume Builder allows you to create different versions of your resume"></textarea>
 		</div>
 				<div class="input-group col-sm-12 col-lg-6 mb-2">
 				<div class="input-group-prepend">
 					<span class="input-group-text  bg-primary text-white" id="TE">Tools &<br> Environment</span>
 				</div>
-				<textarea class="form-control" id="content" rows="3" required="required"></textarea>
+				<textarea class="form-control" id="content" rows="3" required="required" pattern="(^[a-zA-Z _]*$)" placeholder="Eg:HTML,CSS,Javascript"></textarea>
 				</div>
 		</div>
 </fieldset>
@@ -459,22 +459,22 @@
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Eclips
+				<input type="checkbox" class="form-check-input">Android Studio
 			</label>
 		</div>
 				<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">NetBeans
+				<input type="checkbox" class="form-check-input">Eclips 
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">Android Studio
+				<input type="checkbox" class="form-check-input">NeBeans
 			</label>
 		</div>
 		<div class="form-group form-check col-sm-3 col-lg-2">
 			<label for="c" class="form-check-label">
-				<input type="checkbox" class="form-check-input">IntelliJ IDEA
+				<input type="checkbox" class="form-check-input">Adobe Photoshop
 			</label>
 		</div>
 </div>
@@ -489,7 +489,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text bg-primary text-white">Father's Name</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter your Father Name" id="fathername" id="fathername" pattern="(^[a-zA-Z ]*$)" required="required">
+			<input type="text" class="form-control" placeholder="Enter your Father Name" id="fathername" id="fathername" pattern="(^[a-zA-Z _]*$)" required="required">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -501,7 +501,7 @@
 		<div class="input-group-prepend">
 			<span class="input-group-text bg-primary text-white">Native Place:</span>
 		</div>
-			<input type="text" class="form-control" placeholder="Enter your Native Place" id="native" required="required" pattern="(^[a-zA-Z ]*$)">
+			<input type="text" class="form-control" placeholder="Enter your Native Place" id="native" required="required" pattern="(^[a-zA-Z _]*$)">
 			<div class="valid-feedback" style="font-family: cursive; font-size: 18px; font-weight: bold;">
 				hey! it's good :&nbsp;)
 			</div>
@@ -576,7 +576,7 @@
 			<input type="reset" class="btn btn-block btn-lg border-primary text-primary mt-2 mb-2">
 		</div>
 		<div class="col-sm-12 col-lg-6">
-			<input type="submit" class="btn btn-block btn-lg border-success text-success mt-2 mb-2">
+			<input type="submit" class="btn btn-block btn-lg border-success text-success mt-2 mb-2" id="submit">
 		</div>
 	</div>
 	</form>
@@ -593,6 +593,10 @@
 			event.preventDefault();
 			event.target.classList.add('was-validated');
 		}
+		else{submit();}
 	});
+	function submit(){
+		alert("SAI");
+	}
 </script>
 </html>
