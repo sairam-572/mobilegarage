@@ -4,6 +4,7 @@
 	<title>Resume Details</title>
 	<!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" id="meta">
 <style>
 	*{
 		font-family: Arial;
@@ -127,10 +128,16 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script>
 	document.getElementById('getresume').addEventListener("click",function(){
+		document.getElementById('id').removeAttribute("meta");
+		sai();
+		function sai(){
+			document.getElementById('id').removeAttribute("meta");
+			window.reload();
+		}
 		document.getElementById('demo').style.display="none";
 		document.getElementById('resumeform').removeAttribute("style");
 		
-
+		
 
 		document.getElementById("Fullname").innerHTML = localStorage.getItem("userFullname");
 		document.getElementById("Fullnames").innerHTML = localStorage.getItem("userFullname");
