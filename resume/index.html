@@ -9,7 +9,7 @@
 <body>
 	<h1 class="text-center mb-5">RESUME DETAILS</h1>
 <div class="container">
-	<form class="needs-validation" novalidate="novalidate">
+	<form class="needs-validation" action="" novalidate="novalidate">
 		<div class="row">
 		<div class="input-group col-sm-12 col-lg-6 mb-2">
 		<div class="input-group-prepend">
@@ -627,16 +627,8 @@
 		var Tools=document.getElementById('TE').value;
 		//Skills
 
-		var checkboxes = document.getElementsByName('skill').value;
-		var vals = "";
-		for (var i=0, n=checkboxes.length;i<n;i++) 
-		{
-    	if (checkboxes[i].checked) 
-    	{
-        vals += ","+checkboxes[i].value;
-    	}
-		}
-		//if (vals) vals = vals.substring(1);
+
+	
 
 
 
